@@ -1,0 +1,78 @@
+body  {
+        background-color: #111111;
+        font: 15px Verdana;
+        color: #e0e0e0;
+}
+a:visited, a:link, a:hover, a:active {
+        color: #e0e0e0;
+}
+.regiontable {
+        border: 1px solid #111111;
+        border-collapse: collapse;
+}
+td {
+        font: 18px Verdana;
+        border: 1px solid #e0e0e0;
+        padding: 1px 5px 1px 5px;
+}
+th {
+        font: 25px Verdana;
+        font-weight: bold;
+        border: 1px solid #e0e0e0;
+        padding: 1px 5px 1px 5px;
+        background: #226699;
+
+}
+tbody tr:hover {
+        background: #5555FF;
+}
+
+.disabled {
+	color: #888888;
+}
+
+.disabled:hover {
+	background: #111111;
+}
+
+table { position: relative; }
+
+.rowlink::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 30px;
+}
+
+.count {
+        text-align: right;
+        font: 18px "Courier New";
+}
+
+.foot {
+        font: 11px Verdana;
+}
+
+.status {
+	color: #999999;
+}
+
+.status_ok {
+        color: #21CC32;
+}
+.status_stale {
+        color: #FF3232;
+}
+
+.status_stale120 {
+        color: #DCE52A;
+}
+.status_stale240 {
+        color: #F2952E;
+}
+.status_stale480 {
+        color: #FF3232;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Region 0 - Sync Stats</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=2" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.tablesorter.widgets.min.js"></script>
+    <script src="syncstats2.js?v=3"></script>
+
+  </head>
+  <body onload="doInit(); refresh()">
+	  <h2>MLAT sync stats for Region <span id="REGION">0</span></h2>
+    <p>
+      This table shows the current clock synchronization state between all receivers. It will automatically update about every 30 seconds.
+    </p>
+    <p>
+    Each receiver line has the following data:
+    	<ul>
+	<li> Receiver Name
+	<li> Number of peers this receiver is synchronized with
+	<li> 3 rows that contain:
+		<ul>
+		<li>Number of synchronizations done in the last ~30 sec ( &gt; 10 = green )
+		<li>Sync error in &mu;sec - CHECK YOUR LOCATION if you have lots of red here ( &lt; 2 = green )
+		<li>PPM offset - these are relative values, but if you have lots of red, check the ppm setting for dump1090 ( &lt; 50 = green )
+		</ul>
+	</ul>
+
+    <font face="Verdana">
+<input type="text" id="searchbar" placeholder="Search for feeder ..."><br /><br />
+
+<a href="/sync">Go back to Region List</a><br><br>
+
+    <table id="syncstatstable">
+    </table>
+    </font> 
+  </body>
+</html>

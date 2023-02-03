@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feeder (Region) MLAT</title>
+    <link rel="stylesheet" type="text/css" href="css/feeder-style.css?v=qv1" />
+    <link rel="stylesheet" type="text/css" href="css/peer_colors.css?v=qv1" />
+    <link rel="stylesheet" type="text/css" href="css/tablesorter.css?v=qv1" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/jquery.tablesorter.widgets.min.js"></script>
+    <script src="color_calc.js?v=qv1"></script>
+    <script src="feederstats.js?v=qv1"></script>
+  </head>
+
+  <body onload="doInit();">
+	  <h2>MLAT sync stats for feeder '<span id="NAME" class="feedname">NAME</span>' (Region <span id="REGION">REGION</span>)</h2>
+	  <a id="GOBACK" href="/sync/">(Back to the region stats page)</a><br><br>
+    <font face="Verdana">
+    <table id="feederstatstable" class="stats">
+	    <thead></thead>
+	    <tbody></tbody>
+    </table>
+    <br>
+    <table id="feederpeertable" class="peers tablesorter">
+	    <thead></thead>
+	    <tbody></tbody>
+    </table>
+    </font> 
+  </body>
+</html>

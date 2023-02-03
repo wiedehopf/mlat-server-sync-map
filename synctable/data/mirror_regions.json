@@ -1,0 +1,12 @@
+{
+  "0" : {
+	  "region": "1A",
+	  "name": "USA",
+	  "enabled": true
+  },
+  "10" : {
+	  "region": "1B",
+	  "name": "Rest of the world",
+	  "enabled": true
+  }
+}

@@ -1,0 +1,95 @@
+body  {
+        background-color: #111111;
+        font: 15px Verdana;
+        color: #e0e0e0;
+}
+a:visited, a:link, a:hover, a:active {
+        color: #e0e0e0;
+}
+table.stats {
+        border: 1px solid #111111;
+        border-collapse: collapse;
+}
+table.peers {
+        border: 1px solid #111111;
+        border-collapse: collapse;
+}
+td {
+        font: 16px Verdana;
+        border: 1px solid #e0e0e0;
+        padding: 1px 5px 1px 5px;
+}
+th {
+        font: 20px Verdana;
+        border: 1px solid #e0e0e0;
+        padding: 1px 5px 1px 5px;
+        background: #226699;
+
+}
+tbody tr:hover {
+        background: #333366;
+}
+
+tr.t_err {
+	background: red;
+	color: white;
+}
+
+.disabled {
+	color: #888888;
+}
+
+.disabled:hover {
+	background: #111111;
+}
+
+table { position: relative; }
+
+.rowlink::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 30px;
+}
+
+.statstext {
+        text-align: right;
+        font: 18px "Courier New";
+	font-weight: bold;
+}
+
+.count {
+        text-align: right;
+        font: 18px "Courier New";
+	font-weight: bold;
+}
+
+.foot {
+        font: 11px Verdana;
+}
+
+.status {
+	color: #999999;
+}
+.status_ok {
+	color: #22CC44;
+}
+.status_stale {
+	color: #FF3333;
+}
+
+.feedname {
+	font: 25px "Courier New";
+}
+
+td.green {
+	background: #22BB22;
+}
+td.yellow {
+	background: #D0B020;
+}
+td.red {
+	background: #D02020;
+}

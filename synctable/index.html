@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="regionstats.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/region_style.css?v=1" />
+<style>
+.map {
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+}
+</style>
+
+      <title>Sync Stats - mlat-server</title>
+  </head>
+
+  <body onload="doInit()">
+	  <h1>MLAT sync stats for <a href="https://______/">______</a></h1>
+		  <div class="map">
+	  <h2> Also check out: <br>
+			<a target=_blank href="https://_____/syncmap/">Interactive MLAT sync map<br>
+		  	<img src="img/mlat-map-thumb.png"></a>
+	  </h2>
+		  </div>
+	  <p>For some more info, check the main <a href="https://_________/how-to-feed/" target=_new>How To Feed</a> page</p>
+   <br><br>
+   <table id="regiontable" class="regiontable">
+	   <thead>
+		   <tr>
+			<th>Region</th>
+			<th>Count</th>
+			<th>Description</th>
+			<th>Region Status</th>
+		   </tr>
+	   </thead>
+   </table>
+
+  <br>
+  Total Active Regions: <span class="count" id="totalregions">0</span><br>
+  Total MLAT feeders: <span class="count" id="totalcount">0</span><br>
+  <br>
+  <span class="foot"> Last Data Refresh: <span id="updated">Never</span></span><br>
+<span class="foot"> Current time (at page load): <span id="current_time">Never</span></span>
+</html>

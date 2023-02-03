@@ -1,0 +1,216 @@
+body {
+	background: black;
+	color: #dddddd;
+	font: 15px Verdana
+}
+
+table {
+	border-collapse: collapse;
+	color: #d0d0d0;
+	width: 100%;
+}
+
+a:visited, a:link, a:hover, a:active {
+	/*color: #9999ee;*/
+	color: #d0d0d0;
+}
+
+tbody tr:hover {
+	color: #FFFFFF;
+	background: #333366;
+}
+tbody tr a:hover {
+	color: #FFFFFF;
+}
+
+table, td, th {
+	border: 1px solid #dddddd;
+}
+
+th {
+        font: 20px Verdana;
+        border: 1px solid #e0e0e0;
+        background: #226699;
+	/*width: 80px;*/
+	/*overflow: hidden;*/
+	white-space: nowrap;
+	border-collapse: separate;
+	padding: 2px 15px;
+}
+
+td {
+	white-space: nowrap;
+	border-collapse: separate;
+	font: 18px Verdana;
+}
+
+.redblock {
+	color: black;
+	background: red;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.rec_name_td {
+	width: 50px;
+}
+
+.rec_name_header {
+	text-align: center;
+}
+
+.peer_count_td {
+	width: 10px;
+}
+
+.peer_count_header {
+	text-align: center;
+}
+
+.sync_count {
+    text-align: right;
+}
+
+.sync_err {
+    text-align: left;    
+}
+
+.sync_ppm {
+    text-align: center;
+}
+
+.sync_omit {
+    background-color: white;
+    text-align: center;
+}
+
+.sync_nodata {
+    background-color: #505050;
+}
+
+.sync_green {
+    background-color: green;
+}
+
+.sync_good {
+    background-color: lightgreen;
+}
+
+.sync_ok {
+    background-color: yellow;
+}
+
+.sync_bad {
+    background-color: red;
+}
+
+.sync_100 {
+    background-color: #00B000;
+}
+.sync_90 {
+    background-color: #50B000;
+}
+.sync_80 {
+    background-color: #90B000;
+}
+.sync_70 {
+    background-color: #D0B000;
+}
+.sync_60 {
+    background-color: #D09000;
+}
+.sync_50 {
+    background-color: #D07000;
+}
+.sync_40 {
+    background-color: #D05000;
+}
+.sync_30 {
+    background-color: #D01000;
+}
+
+.sync_text {
+    text-align: left;    
+	overflow: hidden;
+	perspective: 1px;
+    border-collapse: separate;
+}
+
+.peer_text {
+    text-align: center;    
+    font: 20px "Courier New";
+    /* font: 20px courier;*/
+}
+
+.state {
+	/*font-size: 7px;*/
+    	font: 9px verdana;
+}
+#sync-span:hover, #sync-span:active {
+	cursor: default;
+	border: 1px solid #3333CC;
+}
+.sync-span1 {
+	cursor: default;	
+	color: lightgreen;
+	border: 1px solid white;
+}
+.sync-span2 {
+	cursor: default;
+	color: yellow;
+	border: 1px solid white;
+}
+.sync-span3 {
+	cursor: default;
+	color: red;
+	border: 1px solid white;
+}
+.sync-span-bad {
+	cursor: default;
+	color: #EEBBBB;
+	border: 1px solid white;
+}
+#searchbar {
+	width: 10%; 
+	font-size: 16px; 
+	padding: 12px 20px 12px 40px;
+	border: 1px solid #888888; 
+	margin-bottom: 12px; 
+}
+
+
+.basicCircle {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: 0px 1px 0px 0px;
+	float: left;
+	behavior: url(PIE.htc); /* for IE8 */
+}
+
+.redCircle {
+	background: #FF0000;
+	border: 1px solid #FF0000;
+}
+.greenCircle {
+	background: #55cc00;
+	border: 1px solid #55cc00;
+}
+.yellowCircle {
+	background: #CCCC00;
+	border: 1px solid #CCCC00;
+}
+.badCircle {
+	background: #EE9999;
+	border: 1px solid #FF0000;
+}
+
+.rowlink::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 30px;
+}
+

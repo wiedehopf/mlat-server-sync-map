@@ -1,0 +1,3 @@
+- URLs need changing in script/do_sync.sh
+- script/do_sync.sh should be run every 30 seconds
+- this whole deal is tacked together, make it work or make it prettier :)
