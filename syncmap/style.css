@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    html, body {
+        margin-left: 5px;
+    }
+}
+
+h1 {
+    font-size: 1.4rem;
+    /* line-height: 1.25em; */
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+input {
+    font-family: "Source Sans Pro";
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 599px) {
+    #sidebar-content {
+        display: none;
+    }
+    .note {
+        display: none;
+    }
+    h1 {
+        font-size: 1.2rem;
+        position: absolute;
+        z-index: 1000;
+        width: 100%;
+        text-align: center;
+    }
+    #progresslabel {
+        display: none;
+    }
+}
+
+.progresslabel {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    position: absolute;
+    margin-block-start: 0;
+}
+
+#progressbar {
+}
+
+@media screen and (max-width: 599px) {
+    #sidebar-container {
+        /* display: none; */
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #sidebar-container {
+        float: left;
+        width: 350px;
+        height: 100%;
+        margin-right: 15px;
+    }
+}
+
+#map-canvas {
+    height: 100%;
+    margin: 0px;
+    background: black;
+}
+
+#map-container {
+    height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    margin-left: 350px;
+}
+
+.hidden {
+    display: none;
+}
+
+#stations-container {
+    height: 200px;
+    overflow: scroll;
+}
+
+#stations {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#stations li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    text-decoration: none; /* Remove default text underline */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#stations li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+.note {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.error {
+    color: #d00;
+}
+
+.si-label {
+    font-weight: bold;
+}

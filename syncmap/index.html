@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>mlat-server Feeder Coverage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.0/leaflet.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.0/leaflet-src.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel='stylesheet' id='wp-block-library-css'
+    href='https://___/wp-includes/css/dist/block-library/style.min.css?ver=5.4' type='text/css'
+    media='all' />
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic|Voltaire:400" />
+  <script src="overlay.js"></script>
+</head>
+
+<body onload="initialize()">
+  <div id="sidebar-container">
+    <h1>mlat-server feeder map</h1>
+    <p class="note"><b>For privacy: locations are approximate</b></p>
+    <div id="progressbar">
+      <p id="progresslabel" class="progresslabel">Loading...</p>
+    </div>
+    <div id="sidebar-content">
+      <p><b>Feeders are operated by people just like you.</b> For
+        information on how you can become a feeder, contribute data to
+        the this network,
+        <a href="https://_____/how-to-feed/" target="_blank">click here</a>.
+	  </p>
+      <p>
+        Click or hover over a feeder on the map to see the peers it's
+        synchronized with for multilateration. Line color indicates
+        quality of the peer synchronization.
+      </p>
+      <input type="text" id="search-input" onkeyup="stationSearchHandler()" placeholder="Search for a feeder"
+        style="width: 100%">
+      <div id="stations-container">
+        <ul id="stations">
+        </ul>
+      </div>
+      <div id="station-info" class="hidden">
+          <h2> <span id="si-name">Feeder name</span></h2>
+          <div><span class="si-label" id="si-num-label"># synced peers:</span> <span id="si-num-peers">1000</span>     <span><a id="si-sync-stats-link">Sync stats</a></span></div>
+        <div><span class="si-label">Region:</span> <span id="si-region">region</span></div>
+        <div><span class="si-label">Closest peer:</span> <span id="si-closest-peer-dist">0</span></div>
+        <div><span class="si-label">Farthest peer:</span> <span id="si-farthest-peer-dist">0</span></div>
+        <div><span class="si-label">Approximate location:</span> <span id="si-peer-loc">0</span></div>
+      </div>
+    </div>
+  </div>
+  <div id="map-container">
+    <div id="map-canvas"></div>
+  </div>
+</body>
+
+</html>
